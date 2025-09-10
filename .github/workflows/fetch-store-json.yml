@@ -6,6 +6,9 @@ on:
     - cron: "0 */4 * * *"
   workflow_dispatch:  # optional: allows manual trigger
 
+permissions:
+  contents: write 
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
